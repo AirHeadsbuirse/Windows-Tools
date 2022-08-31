@@ -1,0 +1,7 @@
+REM Add Preview Pane entries
+REM ============================
+cmd /c reg add HKLM\SOFTWARE\Classes\.bat /v PerceivedType /t REG_SZ /d text /f
+cmd /c reg add HKLM\SOFTWARE\Classes\.pem /v PerceivedType /t REG_SZ /d text /f
+cmd /c reg add HKLM\SOFTWARE\Classes\.config /v PerceivedType /t REG_SZ /d text /f
+cmd /c reg add HKLM\SOFTWARE\Classes\.rtf /v PerceivedType /t REG_SZ /d text /f
+cmd /c reg add HKLM\SOFTWARE\Classes\.cfg /v PerceivedType /t REG_SZ /d text /f
