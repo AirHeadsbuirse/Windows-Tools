@@ -1,0 +1,22 @@
+## Network Refresh
+
+ipconfig /release
+ipconfig /flushdns
+ipconfig /renew
+ipconfig /registerdns
+
+arp -d *
+nbtstat -R
+nbtstat -RR
+ipconfig /flushdns
+ipconfig /registerdns
+
+
+
+## Remove empty folders
+## for /f "delims=" %i in ('dir /ad /s /b') do @rd "%i" 2>NUL
+
+##Clean script
+
+"C:\Program Files (x86)\BleachBit\bleachbit_console.exe" --preset -c --no-uac
+"C:\Program Files\CCleaner\CCleaner64.exe" /auto
